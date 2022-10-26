@@ -1,0 +1,98 @@
+
+<div class="container">
+
+    <div class="row">
+      <div class="col-md-4" >
+        <!-- <h3 class="text-center my-4">What's the weather like ? </h3> -->
+        <marquee> Welcome to beyond your clouds</marquee>
+        <marquee direction="right" 
+            behavior="left" >
+        
+        </marquee>  
+        <!-- <form   >
+            <div class="form-group">
+            
+             </div>
+            
+           </form> -->
+    </div> 
+      <div class="col">
+        <form [formGroup]="weatherSearchForm" (ngSubmit)="sendToAPIXU(weatherSearchForm.value)">
+          <div class="form-group">
+            <input class="form-control"
+            type="text"
+            id="weatherLocation"
+            aria-describedby="weatherLocation"
+            placeholder="What's the weather like in ..."
+            formControlName="location"
+            />
+            <div>
+              <button class="btn">Search</button>
+            </div>
+           
+          </div>
+        
+
+        </form>
+      
+        
+       <h3>Weather Details:</h3>
+       <hr class="horiz-one"/>
+       <p class="text">Current weather conditions:<span>{{this.weatherData?.current.condition.text}}</span></p>
+       <br/>
+       <p class="text">Temperature in Degrees Celsius:{{this.weatherData?.current.temp_c}}</p>
+       <br/>
+       <p class="text">Temperature in Degrees Farenheit:{{this.weatherData?.current.temp_f}}</p>
+       <br/>
+       <p class="text">Location Searched:{{this.weatherData?.location.name}}{{this.weatherData?.location.country}}</p>  -->
+    </div> 
+     </div>
+ </div>
+
+
+
+  <!-- <div class="container">
+
+<div class="column-one">
+    <form  [formGroup]="weatherSearchForm" (ngSubmit)=" sendToAPIXU(weatherSearchForm.value)">
+    
+      <div class="form-group">
+        
+        <input
+          type="text"
+          aria-describedby="weatherLocation"
+          placeholder="Please input a Location"
+          formControlName="location"
+         />
+         <div class="submit">
+          <button>Search</button>
+         </div>
+       
+       </div> 
+     
+    </form> 
+    </div>  -->
+<!--    
+     <input
+    class="form-control"
+    type="text"
+    aria-describedby="weatherLocation"
+    placeholder="Please input a Location"
+    formControlName="location"
+   />  -->
+   
+   
+    <!-- </div> -->
+    <!-- <input
+    class="input-search"
+    type="text"
+    aria-describedby="weatherLocation"
+    placeholder="Please input a Location"
+    formControlName="location"
+   /> 
+ 
+ 
+</div>
+
+
+  -->

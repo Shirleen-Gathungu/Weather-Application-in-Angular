@@ -1,0 +1,27 @@
+
+.container-full{
+    background-image:url('./images/time.gif') ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 157.7vh;
+    width: 68vw;
+    margin-top: -78%;    
+    transition: background-image 1s ease-in-out;
+}
+
+
+.container-full h1{
+    margin-left: 119%;
+
+    color: whitesmoke;
+}
+.container-two{
+
+    border: 1px solid #213346;
+    background-color:#213346 ;
+    width: 32.6vw;
+    height: 157.7vh;
+    margin-left: 99.9%;
+    margin-top: 41%;
+}
